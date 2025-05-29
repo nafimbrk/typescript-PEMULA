@@ -160,6 +160,7 @@ interface Bio {
 
 
 // deklarasi ulang
+// jika ada interface dgn nama yg sama dia akan ditambahkan, maka interface Bio sekarang juga memiiki properti address
 interface Bio {
     address: string
 }
@@ -189,7 +190,7 @@ let statusResponse: Status = Status.Success
 console.log(statusResponse);
 
 // tuple
-let Person: [string, number, ...string[]] = ["resky", 28, "lamongan", "surabaya", "bojonegoro"] // boolean? // juga bisa
+let Person: [string, number, ...string[]] = ["resky", 28, "lamongan", "surabaya", "bojonegoro"]
 
 console.log(Person[0]);
 console.log(Person[1]);
@@ -238,7 +239,7 @@ console.log(getLength([1, 2, 3]));
 // oop
 class Biodata {
     protected name: string
-    protected age: string
+    protected age: number
 
     constructor(name: string, age: number) {
         this.name = name
